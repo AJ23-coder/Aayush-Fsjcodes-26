@@ -4,6 +4,7 @@
   Coder: Aayush Jha 
   Class: SE Comps A    */
 
+import.java.util.InputMismatchException;
 import java.util.Scanner;
 
 public class Company {
