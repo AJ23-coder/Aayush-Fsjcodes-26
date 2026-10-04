@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Addition</title>
+</head>
+<body>
+    <input type="number" name="num1" id="num1">
+    +
+    <input type="number" name="num2" id="num2">
+    =
+    <div id="result">--</div>
+
+    <button onclick="add()">Add</button>
+    <script>
+        function add(){
+            const num1Ele = document.querySelector("#num1");
+            const num2Ele = document.querySelector("#num2");
+
+            let num1 = Number(num1Ele.value);
+            let num2 = Number(num2Ele.value);
+
+            let sum = num1 + num2;
+
+            const resultEle = document.querySelector("#result");
+            resultEle.innerText = sum;
+        }
+    </script>
+</body>
+</html>
