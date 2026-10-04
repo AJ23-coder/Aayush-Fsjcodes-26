@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Background Changer</title>
+</head>
+<body style="text-align: center; background-color: aqua;">
+    <h1>Welcome To RCOE!!</h1>
+    <h2>Aayush Jha</h2>
+    <button onclick="changeBg()">Change BG</button>
+
+    <script>
+        function changeBg(){
+            let colors = ["red", "green", "brown", "pink", "magenta", "purple", "violet"];
+            const bodyEle = document.querySelector("body");
+            let randomIndex = Math.floor(Math.random()*colors.length);
+            bodyEle.style.backgroundColor = colors[randomIndex];
+        }
+
+        setInterval(() => {
+            changeBg();
+        }, 2000);
+    </script>
+</body>
+</html>
