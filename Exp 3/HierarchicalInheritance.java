@@ -30,7 +30,7 @@ class Circle extends Shape {
     }
 
     void calculateArea() {
-        area = Math.PI * radius * radius;
+        area = 3.14 * radius * radius;
         System.out.printf("Area of Circle: %.2f%n", area);
     }
 }
